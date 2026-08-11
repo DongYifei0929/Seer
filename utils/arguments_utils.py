@@ -168,6 +168,8 @@ def get_parser(is_eval=False):
     parser.add_argument("--save_checkpoint_seq", type=int, default=1)
     # if validate
     parser.add_argument("--validation", default=False, action="store_true")
+    parser.add_argument("--validation_every", default=1, type=int)
+    parser.add_argument("--validation_max_batches", default=-1, type=int)
     # bf16 module
     parser.add_argument("--bf16_module", type=str, default="")
     # model structure 
@@ -225,6 +227,8 @@ def get_parser(is_eval=False):
     parser.add_argument("--ensembling_temp", default=0.01, type=float)
     # real
     parser.add_argument("--real_dataset_names", type=str)
+    parser.add_argument("--real_dataset_info", type=str, default=None)
+    parser.add_argument("--real_val_dataset_info", type=str, default=None)
     parser.add_argument("--use_aug_data", default=False, action="store_true")
     parser.add_argument("--real_eval_max_steps", default=600, type=int)
     # preprocess

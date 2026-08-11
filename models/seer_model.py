@@ -277,8 +277,15 @@ class SeerAgent(nn.Module):
         msg = self.vision_encoder.load_state_dict(vit_checkpoint['model'], strict=False)
 
         # # freeze text encoder
-        if os.path.exists("checkpoints/clip/ViT-B-32.pt"):
-            self.clip_model, self.image_processor = clip.load("checkpoints/clip/ViT-B-32.pt", device=clip_device)
+        clip_candidates = (
+            "checkpoints/clip/ViT-B-32.pt",
+            os.environ.get("SEER_CLIP_MODEL_PATH"),
+            "/mnt/afs/dongyifei/.cache/clip/ViT-B-32.pt",
+        )
+        for clip_path in clip_candidates:
+            if clip_path and os.path.exists(clip_path):
+                self.clip_model, self.image_processor = clip.load(clip_path, device=clip_device)
+                break
         else:
             self.clip_model, self.image_processor = clip.load("ViT-B/32", device=clip_device)
 

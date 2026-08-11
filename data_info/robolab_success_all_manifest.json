@@ -1,0 +1,3088 @@
+{
+ "source_root": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth",
+ "dataset_dir": "/mnt/afs/dongyifei/DreamFlyWheel/Seer/real_data/robolab_success_all",
+ "data_info": "/mnt/afs/dongyifei/DreamFlyWheel/Seer/data_info/robolab_success_all.json",
+ "sequence_length": 7,
+ "action_pred_steps": 3,
+ "window_size": 10,
+ "episodes": 123,
+ "converted_steps": 54131,
+ "skipped": [],
+ "records": [
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/AppleAndYogurtInBowlTask_env_003",
+   "episode_key": "0000/000000",
+   "steps": 667,
+   "usable_frames": 668,
+   "primary_video": {
+    "frames": 668,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 668,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_06-36-26_pi05/AppleAndYogurtInBowlTask/run_0.hdf5",
+    "max_position_error": 1.1920929132713809e-08,
+    "max_rotation_error": 2.2298428740995322e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaInBowlTask_env_000",
+   "episode_key": "0000/000001",
+   "steps": 150,
+   "usable_frames": 151,
+   "primary_video": {
+    "frames": 151,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 151,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-19_12-43-52_pi05/BananaInBowlTask/run_0.hdf5",
+    "max_position_error": 1.1920929132713809e-08,
+    "max_rotation_error": 1.4361560250209942e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaInBowlTask_env_001",
+   "episode_key": "0000/000002",
+   "steps": 227,
+   "usable_frames": 228,
+   "primary_video": {
+    "frames": 228,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 228,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-19_12-43-52_pi05/BananaInBowlTask/run_0.hdf5",
+    "max_position_error": 1.1920929132713809e-08,
+    "max_rotation_error": 1.656971764788362e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaInBowlTask_env_002",
+   "episode_key": "0000/000003",
+   "steps": 127,
+   "usable_frames": 128,
+   "primary_video": {
+    "frames": 128,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 128,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-19_12-43-52_pi05/BananaInBowlTask/run_0.hdf5",
+    "max_position_error": 1.1920929132713809e-08,
+    "max_rotation_error": 2.0883320616381994e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaInBowlTask_env_003",
+   "episode_key": "0000/000004",
+   "steps": 248,
+   "usable_frames": 249,
+   "primary_video": {
+    "frames": 249,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 249,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-19_12-43-52_pi05/BananaInBowlTask/run_0.hdf5",
+    "max_position_error": 1.1920929132713809e-08,
+    "max_rotation_error": 1.995876245922971e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaThenRubiksCubeTask_env_000",
+   "episode_key": "0000/000005",
+   "steps": 299,
+   "usable_frames": 300,
+   "primary_video": {
+    "frames": 300,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 300,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-30-15_pi05/BananaThenRubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2223623488731445e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaThenRubiksCubeTask_env_003",
+   "episode_key": "0000/000006",
+   "steps": 360,
+   "usable_frames": 361,
+   "primary_video": {
+    "frames": 361,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 361,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-30-15_pi05/BananaThenRubiksCubeTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.386367522677185e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananaThenRubiksCubeTask_env_004",
+   "episode_key": "0000/000007",
+   "steps": 502,
+   "usable_frames": 503,
+   "primary_video": {
+    "frames": 503,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 503,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-30-15_pi05/BananaThenRubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3233649495889404e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInBinThreeTotalTask_env_000",
+   "episode_key": "0000/000008",
+   "steps": 104,
+   "usable_frames": 105,
+   "primary_video": {
+    "frames": 105,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 105,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_08-54-11_pi05/BananasInBinThreeTotalTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.262929301888784e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInBinThreeTotalTask_env_001",
+   "episode_key": "0000/000009",
+   "steps": 188,
+   "usable_frames": 189,
+   "primary_video": {
+    "frames": 189,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 189,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_08-54-11_pi05/BananasInBinThreeTotalTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 8.997584239088814e-08
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInBinThreeTotalTask_env_002",
+   "episode_key": "0000/000010",
+   "steps": 135,
+   "usable_frames": 136,
+   "primary_video": {
+    "frames": 136,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 136,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_08-54-11_pi05/BananasInBinThreeTotalTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.283744929059817e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInBinThreeTotalTask_env_003",
+   "episode_key": "0000/000011",
+   "steps": 104,
+   "usable_frames": 105,
+   "primary_video": {
+    "frames": 105,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 105,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_08-54-11_pi05/BananasInBinThreeTotalTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 1.9096909165201458e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInBinThreeTotalTask_env_004",
+   "episode_key": "0000/000012",
+   "steps": 102,
+   "usable_frames": 103,
+   "primary_video": {
+    "frames": 103,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 103,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_08-54-11_pi05/BananasInBinThreeTotalTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1976755239276082e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInCrateTask_env_000",
+   "episode_key": "0000/000013",
+   "steps": 344,
+   "usable_frames": 345,
+   "primary_video": {
+    "frames": 345,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 345,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-01-02_pi05/BananasInCrateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.0426165372281918e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInCrateTask_env_001",
+   "episode_key": "0000/000014",
+   "steps": 283,
+   "usable_frames": 284,
+   "primary_video": {
+    "frames": 284,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 284,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-01-02_pi05/BananasInCrateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2482547166956598e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInCrateTask_env_002",
+   "episode_key": "0000/000015",
+   "steps": 673,
+   "usable_frames": 674,
+   "primary_video": {
+    "frames": 674,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 674,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-01-02_pi05/BananasInCrateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.0419369219902908e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInCrateTask_env_003",
+   "episode_key": "0000/000016",
+   "steps": 511,
+   "usable_frames": 512,
+   "primary_video": {
+    "frames": 512,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 512,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-01-02_pi05/BananasInCrateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3054701086372565e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasInCrateTask_env_004",
+   "episode_key": "0000/000017",
+   "steps": 782,
+   "usable_frames": 783,
+   "primary_video": {
+    "frames": 783,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 783,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-01-02_pi05/BananasInCrateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.054853692651565e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasOutOfBinTask_env_000",
+   "episode_key": "0000/000018",
+   "steps": 296,
+   "usable_frames": 297,
+   "primary_video": {
+    "frames": 297,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 297,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-13-15_pi05/BananasOutOfBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.7406190362817584e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasOutOfBinTask_env_001",
+   "episode_key": "0000/000019",
+   "steps": 475,
+   "usable_frames": 476,
+   "primary_video": {
+    "frames": 476,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 476,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-13-15_pi05/BananasOutOfBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.8904674949205436e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BananasOutOfBinTask_env_002",
+   "episode_key": "0000/000020",
+   "steps": 632,
+   "usable_frames": 633,
+   "primary_video": {
+    "frames": 633,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 633,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_09-13-15_pi05/BananasOutOfBinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3592079657386094e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BigPumpkinInBinTask_env_002",
+   "episode_key": "0000/000021",
+   "steps": 328,
+   "usable_frames": 329,
+   "primary_video": {
+    "frames": 329,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 329,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_10-08-16_pi05/BigPumpkinInBinTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 2.0571984706635457e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlInBinTask_env_002",
+   "episode_key": "0000/000022",
+   "steps": 641,
+   "usable_frames": 642,
+   "primary_video": {
+    "frames": 642,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 642,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-04-30_pi05/BowlInBinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3490927645887936e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlInBinTask_env_003",
+   "episode_key": "0000/000023",
+   "steps": 179,
+   "usable_frames": 180,
+   "primary_video": {
+    "frames": 180,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 180,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-04-30_pi05/BowlInBinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.327157964991966e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlInBinTask_env_004",
+   "episode_key": "0000/000024",
+   "steps": 550,
+   "usable_frames": 551,
+   "primary_video": {
+    "frames": 551,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 551,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-04-30_pi05/BowlInBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1315502005347978e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlStackingLeftOnRightTask_env_000",
+   "episode_key": "0000/000025",
+   "steps": 207,
+   "usable_frames": 208,
+   "primary_video": {
+    "frames": 208,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 208,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-17-02_pi05/BowlStackingLeftOnRightTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2403164420980552e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlStackingLeftOnRightTask_env_003",
+   "episode_key": "0000/000026",
+   "steps": 279,
+   "usable_frames": 280,
+   "primary_video": {
+    "frames": 280,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 280,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-17-02_pi05/BowlStackingLeftOnRightTask/run_0.hdf5",
+    "max_position_error": 3.576278717609682e-09,
+    "max_rotation_error": 2.2304268950777836e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlStackingRightOnLeftTask_env_000",
+   "episode_key": "0000/000027",
+   "steps": 166,
+   "usable_frames": 167,
+   "primary_video": {
+    "frames": 167,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 167,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-22-00_pi05/BowlStackingRightOnLeftTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.190804350157146e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/BowlStackingRightOnLeftTask_env_002",
+   "episode_key": "0000/000028",
+   "steps": 209,
+   "usable_frames": 210,
+   "primary_video": {
+    "frames": 210,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 210,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-22-00_pi05/BowlStackingRightOnLeftTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1955821931549284e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/ButterAboveRaisinTask_env_000",
+   "episode_key": "0000/000029",
+   "steps": 186,
+   "usable_frames": 187,
+   "primary_video": {
+    "frames": 187,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 187,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-27-03_pi05/ButterAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3540015517464335e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/ButterAboveRaisinTask_env_001",
+   "episode_key": "0000/000030",
+   "steps": 247,
+   "usable_frames": 248,
+   "primary_video": {
+    "frames": 248,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 248,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-27-03_pi05/ButterAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.340293440594538e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CannedFoodInBinTask_env_003",
+   "episode_key": "0000/000031",
+   "steps": 414,
+   "usable_frames": 415,
+   "primary_video": {
+    "frames": 415,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 415,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-35-22_pi05/CannedFoodInBinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2109638168326438e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CannedFoodInBinTask_env_004",
+   "episode_key": "0000/000032",
+   "steps": 482,
+   "usable_frames": 483,
+   "primary_video": {
+    "frames": 483,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 483,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-35-22_pi05/CannedFoodInBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3534518051874641e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/ClampInRightBinTask_env_004",
+   "episode_key": "0000/000033",
+   "steps": 749,
+   "usable_frames": 750,
+   "primary_video": {
+    "frames": 750,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 750,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_12-51-30_pi05/ClampInRightBinTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 2.2629198639636073e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/ClutterPlasticTask_env_004",
+   "episode_key": "0000/000034",
+   "steps": 764,
+   "usable_frames": 765,
+   "primary_video": {
+    "frames": 765,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 765,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_14-38-29_pi05/ClutterPlasticTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 2.3289497061264148e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CookingClearPlateTask_env_000",
+   "episode_key": "0000/000035",
+   "steps": 467,
+   "usable_frames": 468,
+   "primary_video": {
+    "frames": 468,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 468,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_19-22-38_pi05/CookingClearPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.284934297496759e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CookingClearPlateTask_env_001",
+   "episode_key": "0000/000036",
+   "steps": 350,
+   "usable_frames": 351,
+   "primary_video": {
+    "frames": 351,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 351,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_19-22-38_pi05/CookingClearPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.198116217071312e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CookingClearPlateTask_env_002",
+   "episode_key": "0000/000037",
+   "steps": 846,
+   "usable_frames": 847,
+   "primary_video": {
+    "frames": 847,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 847,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_19-22-38_pi05/CookingClearPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2164267313590932e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CookingClearPlateTask_env_003",
+   "episode_key": "0000/000038",
+   "steps": 899,
+   "usable_frames": 900,
+   "primary_video": {
+    "frames": 900,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 900,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_19-22-38_pi05/CookingClearPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3118335665633423e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/CookingClearPlateTask_env_004",
+   "episode_key": "0000/000039",
+   "steps": 509,
+   "usable_frames": 510,
+   "primary_video": {
+    "frames": 510,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 510,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_19-22-38_pi05/CookingClearPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3661141688883074e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FoodPacking1CansTask_env_000",
+   "episode_key": "0000/000040",
+   "steps": 448,
+   "usable_frames": 449,
+   "primary_video": {
+    "frames": 449,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 449,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_22-00-34_pi05/FoodPacking1CansTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.362427911051215e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FoodPacking1CansTask_env_001",
+   "episode_key": "0000/000041",
+   "steps": 134,
+   "usable_frames": 135,
+   "primary_video": {
+    "frames": 135,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 135,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_22-00-34_pi05/FoodPacking1CansTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.179103016335938e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FoodPacking2CansTask_env_000",
+   "episode_key": "0000/000042",
+   "steps": 1108,
+   "usable_frames": 1109,
+   "primary_video": {
+    "frames": 1109,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 1109,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_22-53-33_pi05/FoodPacking2CansTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3240794827897742e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FoodPacking2CansTask_env_004",
+   "episode_key": "0000/000043",
+   "steps": 1278,
+   "usable_frames": 1279,
+   "primary_video": {
+    "frames": 1279,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 1279,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-17_22-53-33_pi05/FoodPacking2CansTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2600606513873245e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsGreenLimesOnPlateTask_env_001",
+   "episode_key": "0000/000044",
+   "steps": 1001,
+   "usable_frames": 1002,
+   "primary_video": {
+    "frames": 1002,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 1002,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_01-14-50_pi05/FruitsGreenLimesOnPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3674863504033317e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsGreenLimesOnPlateTask_env_002",
+   "episode_key": "0000/000045",
+   "steps": 1178,
+   "usable_frames": 1179,
+   "primary_video": {
+    "frames": 1179,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 1179,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_01-14-50_pi05/FruitsGreenLimesOnPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1574132495515833e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsMovingOrangeOrLimeTask_env_000",
+   "episode_key": "0000/000046",
+   "steps": 317,
+   "usable_frames": 318,
+   "primary_video": {
+    "frames": 318,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 318,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_01-42-15_pi05/FruitsMovingOrangeOrLimeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.9393203859311195e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsMovingOrangeOrLimeTask_env_001",
+   "episode_key": "0000/000047",
+   "steps": 433,
+   "usable_frames": 434,
+   "primary_video": {
+    "frames": 434,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 434,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_01-42-15_pi05/FruitsMovingOrangeOrLimeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.168577196755362e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsMovingOrangeOrLimeTask_env_002",
+   "episode_key": "0000/000048",
+   "steps": 187,
+   "usable_frames": 188,
+   "primary_video": {
+    "frames": 188,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 188,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_01-42-15_pi05/FruitsMovingOrangeOrLimeTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1748320284254948e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnPlate3Task_env_000",
+   "episode_key": "0000/000049",
+   "steps": 2040,
+   "usable_frames": 2041,
+   "primary_video": {
+    "frames": 2041,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 2041,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-59-27_pi05/FruitsOnPlate3Task/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2997159718873142e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnPlate3Task_env_001",
+   "episode_key": "0000/000050",
+   "steps": 2545,
+   "usable_frames": 2546,
+   "primary_video": {
+    "frames": 2546,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 2546,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-59-27_pi05/FruitsOnPlate3Task/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3536292434059396e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnPlate3Task_env_002",
+   "episode_key": "0000/000051",
+   "steps": 929,
+   "usable_frames": 930,
+   "primary_video": {
+    "frames": 930,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 930,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-59-27_pi05/FruitsOnPlate3Task/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3722715015616243e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnPlate3Task_env_003",
+   "episode_key": "0000/000052",
+   "steps": 735,
+   "usable_frames": 736,
+   "primary_video": {
+    "frames": 736,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 736,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-59-27_pi05/FruitsOnPlate3Task/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.423742159970936e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnPlate3Task_env_004",
+   "episode_key": "0000/000053",
+   "steps": 242,
+   "usable_frames": 243,
+   "primary_video": {
+    "frames": 243,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 243,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-59-27_pi05/FruitsOnPlate3Task/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3378318589335996e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnionTask_env_000",
+   "episode_key": "0000/000054",
+   "steps": 750,
+   "usable_frames": 751,
+   "primary_video": {
+    "frames": 751,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 751,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-20-55_pi05/FruitsOnionTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2815925247867615e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnionToPlateTask_env_000",
+   "episode_key": "0000/000055",
+   "steps": 481,
+   "usable_frames": 482,
+   "primary_video": {
+    "frames": 482,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 482,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-41-16_pi05/FruitsOnionToPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1732135396193212e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnionToPlateTask_env_001",
+   "episode_key": "0000/000056",
+   "steps": 193,
+   "usable_frames": 194,
+   "primary_video": {
+    "frames": 194,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 194,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-41-16_pi05/FruitsOnionToPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1559292960585797e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnionToPlateTask_env_002",
+   "episode_key": "0000/000057",
+   "steps": 824,
+   "usable_frames": 825,
+   "primary_video": {
+    "frames": 825,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 825,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-41-16_pi05/FruitsOnionToPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3689431115035438e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOnionToPlateTask_env_003",
+   "episode_key": "0000/000058",
+   "steps": 263,
+   "usable_frames": 264,
+   "primary_video": {
+    "frames": 264,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 264,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_02-41-16_pi05/FruitsOnionToPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1758279148073186e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOrangesOnPlateTask_env_000",
+   "episode_key": "0000/000059",
+   "steps": 1260,
+   "usable_frames": 1261,
+   "primary_video": {
+    "frames": 1261,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 1261,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_05-19-22_pi05/FruitsOrangesOnPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3198374020649e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOrangesOnPlateTask_env_001",
+   "episode_key": "0000/000060",
+   "steps": 143,
+   "usable_frames": 144,
+   "primary_video": {
+    "frames": 144,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 144,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_05-19-22_pi05/FruitsOrangesOnPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.0568739129486913e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOrangesOnPlateTask_env_002",
+   "episode_key": "0000/000061",
+   "steps": 111,
+   "usable_frames": 112,
+   "primary_video": {
+    "frames": 112,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 112,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_05-19-22_pi05/FruitsOrangesOnPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2018580783364824e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOrangesOnPlateTask_env_003",
+   "episode_key": "0000/000062",
+   "steps": 115,
+   "usable_frames": 116,
+   "primary_video": {
+    "frames": 116,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 116,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_05-19-22_pi05/FruitsOrangesOnPlateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1608431926709192e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/FruitsOrangesOnPlateTask_env_004",
+   "episode_key": "0000/000063",
+   "steps": 110,
+   "usable_frames": 111,
+   "primary_video": {
+    "frames": 111,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 111,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_05-19-22_pi05/FruitsOrangesOnPlateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1482582782051444e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/GreenSpoonsInPotTask_env_002",
+   "episode_key": "0000/000064",
+   "steps": 1973,
+   "usable_frames": 1974,
+   "primary_video": {
+    "frames": 1974,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 1974,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_06-03-28_pi05/GreenSpoonsInPotTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 2.334364310437857e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/HammersInLeftBinTask_env_004",
+   "episode_key": "0000/000065",
+   "steps": 2663,
+   "usable_frames": 2664,
+   "primary_video": {
+    "frames": 2664,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 2664,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_06-57-54_pi05/HammersInLeftBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3605258917934442e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MouseOnKeyboardTask_env_003",
+   "episode_key": "0000/000066",
+   "steps": 539,
+   "usable_frames": 540,
+   "primary_video": {
+    "frames": 540,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 540,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_08-47-03_pi05/MouseOnKeyboardTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2931926112065146e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MouseOnKeyboardTask_env_004",
+   "episode_key": "0000/000067",
+   "steps": 425,
+   "usable_frames": 426,
+   "primary_video": {
+    "frames": 426,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 426,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_08-47-03_pi05/MouseOnKeyboardTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.262571020630497e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardAboveRaisinTask_env_000",
+   "episode_key": "0000/000068",
+   "steps": 128,
+   "usable_frames": 129,
+   "primary_video": {
+    "frames": 129,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 129,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-25-15_pi05/MustardAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.067276304861101e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardAboveRaisinTask_env_001",
+   "episode_key": "0000/000069",
+   "steps": 156,
+   "usable_frames": 157,
+   "primary_video": {
+    "frames": 157,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 157,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-25-15_pi05/MustardAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.229511629621287e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardAboveRaisinTask_env_002",
+   "episode_key": "0000/000070",
+   "steps": 127,
+   "usable_frames": 128,
+   "primary_video": {
+    "frames": 128,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 128,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-25-15_pi05/MustardAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3155363183666597e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardAboveRaisinTask_env_003",
+   "episode_key": "0000/000071",
+   "steps": 90,
+   "usable_frames": 91,
+   "primary_video": {
+    "frames": 91,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 91,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-25-15_pi05/MustardAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 1.889954188313448e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardAboveRaisinTask_env_004",
+   "episode_key": "0000/000072",
+   "steps": 119,
+   "usable_frames": 120,
+   "primary_video": {
+    "frames": 120,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 120,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-25-15_pi05/MustardAboveRaisinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1952408743382142e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInLeftBinTask_env_000",
+   "episode_key": "0000/000073",
+   "steps": 330,
+   "usable_frames": 331,
+   "primary_video": {
+    "frames": 331,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 331,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-29-13_pi05/MustardInLeftBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.5263572603186083e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInLeftBinTask_env_002",
+   "episode_key": "0000/000074",
+   "steps": 389,
+   "usable_frames": 390,
+   "primary_video": {
+    "frames": 390,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 390,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-29-13_pi05/MustardInLeftBinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 8.28119125237803e-08
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInLeftBinTask_env_004",
+   "episode_key": "0000/000075",
+   "steps": 302,
+   "usable_frames": 303,
+   "primary_video": {
+    "frames": 303,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 303,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-29-13_pi05/MustardInLeftBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.8626696195060943e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInRightBinTask_env_000",
+   "episode_key": "0000/000076",
+   "steps": 113,
+   "usable_frames": 114,
+   "primary_video": {
+    "frames": 114,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 114,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-36-19_pi05/MustardInRightBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.0784307187810377e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInRightBinTask_env_001",
+   "episode_key": "0000/000077",
+   "steps": 139,
+   "usable_frames": 140,
+   "primary_video": {
+    "frames": 140,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 140,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-36-19_pi05/MustardInRightBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.149556794810255e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInRightBinTask_env_003",
+   "episode_key": "0000/000078",
+   "steps": 137,
+   "usable_frames": 138,
+   "primary_video": {
+    "frames": 138,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 138,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-36-19_pi05/MustardInRightBinTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 1.6416157716601302e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/MustardInRightBinTask_env_004",
+   "episode_key": "0000/000079",
+   "steps": 140,
+   "usable_frames": 141,
+   "primary_video": {
+    "frames": 141,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 141,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-36-19_pi05/MustardInRightBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.0225218804665057e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/OneBottleInSquarePailTask_env_000",
+   "episode_key": "0000/000080",
+   "steps": 360,
+   "usable_frames": 361,
+   "primary_video": {
+    "frames": 361,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 361,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-54-46_pi05/OneBottleInSquarePailTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1750274650363363e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/OneBottleInSquarePailTask_env_001",
+   "episode_key": "0000/000081",
+   "steps": 136,
+   "usable_frames": 137,
+   "primary_video": {
+    "frames": 137,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 137,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-54-46_pi05/OneBottleInSquarePailTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3503223178905015e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/OneBottleInSquarePailTask_env_002",
+   "episode_key": "0000/000082",
+   "steps": 190,
+   "usable_frames": 191,
+   "primary_video": {
+    "frames": 191,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 191,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-54-46_pi05/OneBottleInSquarePailTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.0570760131278683e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/OneBottleInSquarePailTask_env_003",
+   "episode_key": "0000/000083",
+   "steps": 880,
+   "usable_frames": 881,
+   "primary_video": {
+    "frames": 881,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 881,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-54-46_pi05/OneBottleInSquarePailTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 2.3052593905296508e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/OneBottleInSquarePailTask_env_004",
+   "episode_key": "0000/000084",
+   "steps": 118,
+   "usable_frames": 119,
+   "primary_video": {
+    "frames": 119,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 119,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_09-54-46_pi05/OneBottleInSquarePailTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2052225044879636e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeOrBananaTask_env_000",
+   "episode_key": "0000/000085",
+   "steps": 167,
+   "usable_frames": 168,
+   "primary_video": {
+    "frames": 168,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 168,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-01-31_pi05/RubiksCubeOrBananaTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2057378219376273e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeOrBananaTask_env_001",
+   "episode_key": "0000/000086",
+   "steps": 90,
+   "usable_frames": 91,
+   "primary_video": {
+    "frames": 91,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 91,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-01-31_pi05/RubiksCubeOrBananaTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1732080151870102e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeOrBananaTask_env_002",
+   "episode_key": "0000/000087",
+   "steps": 208,
+   "usable_frames": 209,
+   "primary_video": {
+    "frames": 209,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 209,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-01-31_pi05/RubiksCubeOrBananaTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.279771497140282e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeOrBananaTask_env_003",
+   "episode_key": "0000/000088",
+   "steps": 241,
+   "usable_frames": 242,
+   "primary_video": {
+    "frames": 242,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 242,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-01-31_pi05/RubiksCubeOrBananaTask/run_0.hdf5",
+    "max_position_error": 3.576278717609682e-09,
+    "max_rotation_error": 2.3629438840352654e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeOrBananaTask_env_004",
+   "episode_key": "0000/000089",
+   "steps": 120,
+   "usable_frames": 121,
+   "primary_video": {
+    "frames": 121,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 121,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-01-31_pi05/RubiksCubeOrBananaTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1327931889194332e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeTask_env_000",
+   "episode_key": "0000/000090",
+   "steps": 103,
+   "usable_frames": 104,
+   "primary_video": {
+    "frames": 104,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 104,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-13-54_pi05/RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.0842224879252546e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeTask_env_001",
+   "episode_key": "0000/000091",
+   "steps": 151,
+   "usable_frames": 152,
+   "primary_video": {
+    "frames": 152,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 152,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-13-54_pi05/RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.282980039466077e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeTask_env_002",
+   "episode_key": "0000/000092",
+   "steps": 104,
+   "usable_frames": 105,
+   "primary_video": {
+    "frames": 105,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 105,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-13-54_pi05/RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 3.576278717609682e-09,
+    "max_rotation_error": 2.3611700000298846e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeTask_env_003",
+   "episode_key": "0000/000093",
+   "steps": 150,
+   "usable_frames": 151,
+   "primary_video": {
+    "frames": 151,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 151,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-13-54_pi05/RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2969817683490714e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/RubiksCubeTask_env_004",
+   "episode_key": "0000/000094",
+   "steps": 166,
+   "usable_frames": 167,
+   "primary_video": {
+    "frames": 167,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 167,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-13-54_pi05/RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2435552880571056e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/SauceBottlesCrateTask_env_000",
+   "episode_key": "0000/000095",
+   "steps": 446,
+   "usable_frames": 447,
+   "primary_video": {
+    "frames": 447,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 447,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-30-20_pi05/SauceBottlesCrateTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1306323457358626e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/SauceBottlesCrateTask_env_002",
+   "episode_key": "0000/000096",
+   "steps": 219,
+   "usable_frames": 220,
+   "primary_video": {
+    "frames": 220,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 220,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-30-20_pi05/SauceBottlesCrateTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.154322986396929e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/SmallerObjectButterInBinTask_env_002",
+   "episode_key": "0000/000097",
+   "steps": 203,
+   "usable_frames": 204,
+   "primary_video": {
+    "frames": 204,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 204,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-39-08_pi05/SmallerObjectButterInBinTask/run_0.hdf5",
+    "max_position_error": 3.576278717609682e-09,
+    "max_rotation_error": 2.2141113860681604e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/SmallerObjectButterInBinTask_env_004",
+   "episode_key": "0000/000098",
+   "steps": 363,
+   "usable_frames": 364,
+   "primary_video": {
+    "frames": 364,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 364,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_12-39-08_pi05/SmallerObjectButterInBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2235656364501783e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/SpoonInMugTask_env_001",
+   "episode_key": "0000/000099",
+   "steps": 536,
+   "usable_frames": 537,
+   "primary_video": {
+    "frames": 537,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 537,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-24-48_pi05/SpoonInMugTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.105522693508064e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/SpoonInMugTask_env_004",
+   "episode_key": "0000/000100",
+   "steps": 372,
+   "usable_frames": 373,
+   "primary_video": {
+    "frames": 373,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 373,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-24-48_pi05/SpoonInMugTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.0334520544109926e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/Stack3RubiksCubeTask_env_002",
+   "episode_key": "0000/000101",
+   "steps": 489,
+   "usable_frames": 490,
+   "primary_video": {
+    "frames": 490,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 490,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-42-18_pi05/Stack3RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.3245634406175548e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/Stack3RubiksCubeTask_env_003",
+   "episode_key": "0000/000102",
+   "steps": 270,
+   "usable_frames": 271,
+   "primary_video": {
+    "frames": 271,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 271,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-42-18_pi05/Stack3RubiksCubeTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1828686292474851e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackWhiteMugsTask_env_000",
+   "episode_key": "0000/000103",
+   "steps": 796,
+   "usable_frames": 797,
+   "primary_video": {
+    "frames": 797,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 797,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-53-56_pi05/StackWhiteMugsTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.2423827443837824e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackWhiteMugsTask_env_001",
+   "episode_key": "0000/000104",
+   "steps": 669,
+   "usable_frames": 670,
+   "primary_video": {
+    "frames": 670,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 670,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-53-56_pi05/StackWhiteMugsTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.301642512987158e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackWhiteMugsTask_env_002",
+   "episode_key": "0000/000105",
+   "steps": 549,
+   "usable_frames": 550,
+   "primary_video": {
+    "frames": 550,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 550,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-53-56_pi05/StackWhiteMugsTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.4225575409979785e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackWhiteMugsTask_env_004",
+   "episode_key": "0000/000106",
+   "steps": 119,
+   "usable_frames": 120,
+   "primary_video": {
+    "frames": 120,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 120,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_13-53-56_pi05/StackWhiteMugsTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.8721584293142926e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackYellowOnRedTask_env_000",
+   "episode_key": "0000/000107",
+   "steps": 272,
+   "usable_frames": 273,
+   "primary_video": {
+    "frames": 273,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 273,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-07-18_pi05/StackYellowOnRedTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.1122066868585038e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackYellowOnRedTask_env_001",
+   "episode_key": "0000/000108",
+   "steps": 344,
+   "usable_frames": 345,
+   "primary_video": {
+    "frames": 345,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 345,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-07-18_pi05/StackYellowOnRedTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.0996928265477996e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackYellowOnRedTask_env_002",
+   "episode_key": "0000/000109",
+   "steps": 452,
+   "usable_frames": 453,
+   "primary_video": {
+    "frames": 453,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 453,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-07-18_pi05/StackYellowOnRedTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.1739732877685195e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/StackYellowOnRedTask_env_003",
+   "episode_key": "0000/000110",
+   "steps": 221,
+   "usable_frames": 222,
+   "primary_video": {
+    "frames": 222,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 222,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-07-18_pi05/StackYellowOnRedTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2702684492547236e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/TakeMeasuringSpoonOutTask_env_000",
+   "episode_key": "0000/000111",
+   "steps": 389,
+   "usable_frames": 390,
+   "primary_video": {
+    "frames": 390,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 390,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-20-45_pi05/TakeMeasuringSpoonOutTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.24265080316324e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/TakeMeasuringSpoonOutTask_env_002",
+   "episode_key": "0000/000112",
+   "steps": 313,
+   "usable_frames": 314,
+   "primary_video": {
+    "frames": 314,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 314,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-20-45_pi05/TakeMeasuringSpoonOutTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.146314652203993e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/TakeMeasuringSpoonOutTask_env_003",
+   "episode_key": "0000/000113",
+   "steps": 79,
+   "usable_frames": 80,
+   "primary_video": {
+    "frames": 80,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 80,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-20-45_pi05/TakeMeasuringSpoonOutTask/run_0.hdf5",
+    "max_position_error": 3.576278717609682e-09,
+    "max_rotation_error": 2.169505077639584e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/TakeMeasuringSpoonOutTask_env_004",
+   "episode_key": "0000/000114",
+   "steps": 368,
+   "usable_frames": 369,
+   "primary_video": {
+    "frames": 369,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 369,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_14-20-45_pi05/TakeMeasuringSpoonOutTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3479138732592933e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/ToyInBinTask_env_001",
+   "episode_key": "0000/000115",
+   "steps": 420,
+   "usable_frames": 421,
+   "primary_video": {
+    "frames": 421,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 421,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_15-36-01_pi05/ToyInBinTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3476386471484626e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/UnstackRubiksCubeTask_env_001",
+   "episode_key": "0000/000116",
+   "steps": 308,
+   "usable_frames": 309,
+   "primary_video": {
+    "frames": 309,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 309,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_15-53-00_pi05/UnstackRubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 1.4591260641434635e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/UnstackRubiksCubeTask_env_004",
+   "episode_key": "0000/000117",
+   "steps": 856,
+   "usable_frames": 857,
+   "primary_video": {
+    "frames": 857,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 857,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_15-53-00_pi05/UnstackRubiksCubeTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.3501864490296923e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/WhiteMugInCenterOfTableTask_env_001",
+   "episode_key": "0000/000118",
+   "steps": 239,
+   "usable_frames": 240,
+   "primary_video": {
+    "frames": 240,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 240,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_16-34-53_pi05/WhiteMugInCenterOfTableTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.320634572537037e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/WhiteMugInCenterOfTableTask_env_004",
+   "episode_key": "0000/000119",
+   "steps": 257,
+   "usable_frames": 258,
+   "primary_video": {
+    "frames": 258,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 258,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_16-34-53_pi05/WhiteMugInCenterOfTableTask/run_0.hdf5",
+    "max_position_error": 1.192092824453539e-08,
+    "max_rotation_error": 2.243577713898212e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/WoodSpatulaToBowlTask_env_002",
+   "episode_key": "0000/000120",
+   "steps": 431,
+   "usable_frames": 432,
+   "primary_video": {
+    "frames": 432,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 432,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_16-59-14_pi05/WoodSpatulaToBowlTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 2.280435378728955e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/WoodSpatulaToBowlTask_env_003",
+   "episode_key": "0000/000121",
+   "steps": 383,
+   "usable_frames": 384,
+   "primary_video": {
+    "frames": 384,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 384,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_16-59-14_pi05/WoodSpatulaToBowlTask/run_0.hdf5",
+    "max_position_error": 2.622604367008563e-08,
+    "max_rotation_error": 1.1454675807212437e-07
+   }
+  },
+  {
+   "source_dir": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/robolab_with_depth/YogurtInBowlTask_env_003",
+   "episode_key": "0000/000122",
+   "steps": 308,
+   "usable_frames": 309,
+   "primary_video": {
+    "frames": 309,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "wrist_video": {
+    "frames": 309,
+    "fps": 15.0,
+    "width": 640,
+    "height": 360
+   },
+   "camera_extrinsics_source": "params_cam2base_extrinsics_6d + OpenGL axis correction",
+   "validation": {
+    "status": "ok",
+    "hdf5": "/mnt/afs/dongyifei/DreamFlyWheel/RoboLab/output/2026-07-18_17-37-19_pi05/YogurtInBowlTask/run_0.hdf5",
+    "max_position_error": 7.152557657263969e-09,
+    "max_rotation_error": 2.2388952553308222e-07
+   }
+  }
+ ]
+}

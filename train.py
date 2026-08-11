@@ -1,9 +1,11 @@
 import glob
+import json
 import os
 import random
 from collections import OrderedDict
 import numpy as np
 import torch
+import torch.distributed as dist
 import wandb
 import clip
 from torch.nn.parallel import DistributedDataParallel as DDP
@@ -14,9 +16,14 @@ from transformers import (
     get_linear_schedule_with_warmup,
 )
 from models.seer_model import SeerAgent
-from utils.train_utils import get_checkpoint, train_one_epoch_calvin, get_ckpt_name
+from utils.train_utils import (
+    get_checkpoint,
+    get_ckpt_name,
+    train_one_epoch_calvin,
+    validate_one_epoch_calvin,
+)
 from utils.arguments_utils import get_parser
-from utils.data_utils import get_calvin_dataset, get_calvin_val_dataset, get_droid_dataset, get_libero_pretrain_dataset, get_libero_finetune_dataset, get_real_finetune_dataset, get_oxe_dataset
+from utils.data_utils import get_calvin_dataset, get_calvin_val_dataset, get_droid_dataset, get_libero_pretrain_dataset, get_libero_finetune_dataset, get_real_finetune_dataset, get_real_val_dataset, get_oxe_dataset
 from utils.distributed_utils import init_distributed_device, world_info_from_env  
 
 
@@ -84,6 +91,22 @@ def main(args):
         calvin_dataset = get_real_finetune_dataset(args, model.image_processor, clip, epoch=0)
     elif args.finetune_type == "oxe":
         calvin_dataset = get_oxe_dataset(args, model.image_processor, clip, epoch=0)
+    val_dataset = None
+    if args.validation:
+        if args.validation_every < 1:
+            raise ValueError("--validation_every must be at least 1")
+        if args.finetune_type == "real":
+            val_dataset = get_real_val_dataset(
+                args, model.image_processor, clip, epoch=0
+            )
+        elif args.finetune_type == "calvin":
+            val_dataset = get_calvin_val_dataset(
+                args, model.image_processor, clip, epoch=0
+            )
+        else:
+            raise NotImplementedError(
+                f"Validation is not implemented for {args.finetune_type}"
+            )
     random_seed(args.seed, args.rank)
     print(f"Start running training on rank {args.rank}.")
     if args.rank == 0 and args.report_to_wandb:
@@ -155,6 +178,7 @@ def main(args):
             optimizer, num_warmup_steps=args.warmup_steps
         )
     resume_from_epoch = 0
+    best_val_loss = float("inf")
     if args.finetune_from_pretrained_ckpt is not None:
         if args.rank == 0:
             print(f"Starting finetuning from pretrained checkpoint {args.finetune_from_pretrained_ckpt}")    
@@ -188,10 +212,12 @@ def main(args):
         optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
         lr_scheduler.load_state_dict(checkpoint["lr_scheduler_state_dict"])
         resume_from_epoch = checkpoint["epoch"] + 1
+        best_val_loss = checkpoint.get("best_val_loss", best_val_loss)
 
     ckpt_dir = os.path.join(f"{args.save_checkpoint_path}", args.run_name)
     if args.rank == 0 and not os.path.exists(ckpt_dir):
         os.makedirs(ckpt_dir)
+    validation_history_path = os.path.join(ckpt_dir, "validation_metrics.jsonl")
     
     ddp_model.train()
     for epoch in range(resume_from_epoch, args.num_epochs):
@@ -207,12 +233,49 @@ def main(args):
             device_id=device_id,
             wandb=wandb,
         )
+        validation_metrics = None
+        if val_dataset is not None and (
+            (epoch + 1) % args.validation_every == 0
+            or epoch == args.num_epochs - 1
+        ):
+            val_dataset.set_epoch(epoch)
+            validation_metrics = validate_one_epoch_calvin(
+                args=args,
+                model=ddp_model,
+                epoch=epoch,
+                val_loader=val_dataset.dataloader,
+                device_id=device_id,
+                wandb=wandb,
+            )
+            if args.rank == 0:
+                with open(validation_history_path, "a", encoding="utf-8") as f:
+                    f.write(json.dumps(validation_metrics) + "\n")
+                if validation_metrics["val_loss"] < best_val_loss:
+                    best_val_loss = validation_metrics["val_loss"]
+                    best_checkpoint = {
+                        "epoch": epoch,
+                        "model_state_dict": get_checkpoint(ddp_model),
+                        "optimizer_state_dict": optimizer.state_dict(),
+                        "lr_scheduler_state_dict": lr_scheduler.state_dict(),
+                        "best_val_loss": best_val_loss,
+                        "validation_metrics": validation_metrics,
+                    }
+                    best_path = os.path.join(ckpt_dir, "best.pth")
+                    print(
+                        f"Saving best validation checkpoint to {best_path} "
+                        f"(val_loss={best_val_loss:.6f})"
+                    )
+                    torch.save(best_checkpoint, best_path)
+            if dist.is_available() and dist.is_initialized():
+                dist.barrier()
         if args.rank == 0 and args.save_checkpoint and epoch % args.save_checkpoint_seq == 0 and epoch > args.start_save_checkpoint:
             checkpoint_dict = {
                 "epoch": epoch,
                 "model_state_dict": get_checkpoint(ddp_model),
                 "optimizer_state_dict": optimizer.state_dict(),
                 "lr_scheduler_state_dict": lr_scheduler.state_dict(),
+                "best_val_loss": best_val_loss,
+                "validation_metrics": validation_metrics,
             }
             ckpt_name = get_ckpt_name(args, epoch)
             ckpt_path = os.path.join(ckpt_dir, ckpt_name)

@@ -2905,7 +2905,7 @@ def get_real_finetune_dataset(args, image_processor, tokenizer, epoch=0, floor=F
         max_window_size=args.max_window_size,
         primary_mode=args.primary_mode,
         small_size=args.small_size,
-        dataset_info=args.real_dataset_names,
+        dataset_info=args.real_dataset_info or args.real_dataset_names,
         gripper_width=args.gripper_width,
         load_real_file="npz",
         use_aug_data=args.use_aug_data,
@@ -2945,6 +2945,73 @@ def get_real_finetune_dataset(args, image_processor, tokenizer, epoch=0, floor=F
     dataloader.num_samples = num_samples
 
     return DataInfo(dataloader=dataloader, shared_epoch=shared_epoch, sampler=sampler, dataset=real_dataset)
+
+
+def get_real_val_dataset(args, image_processor, tokenizer, epoch=0):
+    if not args.real_val_dataset_info:
+        raise ValueError("--real_val_dataset_info is required with real-data validation")
+
+    shared_epoch = SharedEpoch(epoch=epoch)
+    preprocess_image_fn = functools.partial(
+        preprocess_image, image_processor=image_processor
+    )
+    preprocess_text_fn = functools.partial(preprocess_text_calvin, tokenizer=tokenizer)
+    real_dataset = DiskRealDataset(
+        image_fn=preprocess_image_fn,
+        text_fn=preprocess_text_fn,
+        dataset_names=[args.real_dataset_names],
+        rgb_pad=-1,
+        gripper_pad=-1,
+        traj_cons=False,
+        text_aug=False,
+        act_step=args.multi_step_action,
+        root_dir=args.root_dir,
+        image_primary_size=args.image_primary_size,
+        image_wrist_size=args.image_wrist_size,
+        window_size=args.window_size,
+        dif_ws=args.dif_ws,
+        min_window_size=args.min_window_size,
+        max_window_size=args.max_window_size,
+        primary_mode=args.primary_mode,
+        small_size=args.small_size,
+        dataset_info=args.real_val_dataset_info,
+        gripper_width=args.gripper_width,
+        load_real_file="npz",
+        use_aug_data=args.use_aug_data,
+        max_rel_pos=args.max_rel_pos,
+        max_rel_orn=args.max_rel_orn,
+        magic_scaling_factor_pos=args.magic_scaling_factor_pos,
+        magic_scaling_factor_orn=args.magic_scaling_factor_orn,
+    )
+    sampler = DistributedSampler(
+        real_dataset,
+        num_replicas=args.world_size,
+        rank=args.rank,
+        shuffle=False,
+        seed=args.seed,
+        drop_last=True,
+    )
+    num_workers = max(1, args.workers)
+    dataloader = DataLoader(
+        real_dataset,
+        batch_size=args.batch_size,
+        pin_memory=False,
+        num_workers=num_workers,
+        prefetch_factor=3,
+        sampler=sampler,
+        persistent_workers=True,
+        collate_fn=real_dataset.collator,
+        drop_last=False,
+    )
+    dataloader.num_batches = len(dataloader)
+    dataloader.num_samples = sampler.num_samples * args.world_size
+
+    return DataInfo(
+        dataloader=dataloader,
+        shared_epoch=shared_epoch,
+        sampler=sampler,
+        dataset=real_dataset,
+    )
 
 class BaseOXEDataset(Dataset):
     def __init__(

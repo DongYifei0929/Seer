@@ -247,6 +247,189 @@ def train_one_epoch_calvin(
         #             if epoch > 0:
         #                 os.remove(ckpt_path)
 
+
+@torch.no_grad()
+def validate_one_epoch_calvin(args, model, epoch, val_loader, device_id, wandb):
+    autocast = get_autocast(args.precision)
+    cast_dtype = get_cast_dtype(args.precision)
+    was_training = model.training
+    model.eval()
+
+    max_batches = args.validation_max_batches
+    total_batches = len(val_loader)
+    if max_batches > 0:
+        total_batches = min(total_batches, max_batches)
+    progress = tqdm(
+        enumerate(val_loader),
+        disable=args.rank != 0,
+        total=total_batches,
+        desc=f"validation {epoch + 1}/{args.num_epochs}",
+    )
+    # total, arm action, gripper action, image, sample count
+    metric_sums = torch.zeros(5, dtype=torch.float64, device=device_id)
+
+    for num_steps, batch_calvin in progress:
+        if max_batches > 0 and num_steps >= max_batches:
+            break
+
+        images_primary = batch_calvin[0].to(
+            device_id, dtype=cast_dtype, non_blocking=True
+        )
+        images_wrist = batch_calvin[3].to(
+            device_id, dtype=cast_dtype, non_blocking=True
+        )
+        text_tokens = (
+            batch_calvin[1]
+            .to(device_id, non_blocking=True)
+            .unsqueeze(1)
+            .repeat(1, args.window_size, 1)
+        )
+        states = batch_calvin[4].to(
+            device_id, dtype=cast_dtype, non_blocking=True
+        )
+        if args.gripper_width:
+            input_states = torch.cat([states[..., :6], states[..., -2:]], dim=-1)
+        else:
+            input_states = torch.cat([states[..., :6], states[..., [-1]]], dim=-1)
+            input_states[..., 6:] = (input_states[..., 6:] + 1) // 2
+
+        actions = batch_calvin[2].to(
+            device_id, dtype=cast_dtype, non_blocking=True
+        )
+        actions[..., 6:] = (actions[..., 6:] + 1) // 2
+        input_image_primary = images_primary[:, :args.sequence_length]
+        input_image_wrist = images_wrist[:, :args.sequence_length]
+        input_text_token = text_tokens[:, :args.sequence_length]
+        input_state = input_states[:, :args.sequence_length]
+        label_actions = torch.cat(
+            [
+                actions[
+                    :, j : args.sequence_length - args.atten_goal + j
+                ].unsqueeze(-2)
+                for j in range(args.action_pred_steps)
+            ],
+            dim=-2,
+        )
+
+        with autocast():
+            (
+                arm_pred_action,
+                gripper_pred_action,
+                image_pred,
+                _,
+                _,
+                _,
+            ) = model(
+                image_primary=input_image_primary,
+                image_wrist=input_image_wrist,
+                state=input_state,
+                text_token=input_text_token,
+                action=actions[:, :args.sequence_length],
+            )
+
+        if args.loss_action and args.action_pred_steps:
+            loss_arm_action = F.smooth_l1_loss(
+                arm_pred_action[:, : args.sequence_length - args.atten_goal],
+                label_actions[
+                    :, : args.sequence_length - args.atten_goal, :, :6
+                ],
+            )
+            loss_gripper_action = F.binary_cross_entropy(
+                gripper_pred_action[:, : args.sequence_length - args.atten_goal],
+                label_actions[
+                    :, : args.sequence_length - args.atten_goal, :, 6:
+                ],
+            )
+        else:
+            loss_arm_action = torch.zeros((), device=device_id)
+            loss_gripper_action = torch.zeros((), device=device_id)
+
+        if args.loss_image and args.obs_pred:
+            label_end = (
+                args.future_steps + args.sequence_length - args.atten_goal
+            )
+            label_image_primary = images_primary[
+                :, args.future_steps:label_end
+            ].flatten(0, 1)
+            label_image_wrist = images_wrist[
+                :, args.future_steps:label_end
+            ].flatten(0, 1)
+            label_image_primary = normalize_patchfied_image(
+                patchify(label_image_primary, patch_size=args.patch_size)
+            )
+            label_image_wrist = normalize_patchfied_image(
+                patchify(label_image_wrist, patch_size=args.patch_size)
+            )
+            image_pred = image_pred.reshape(
+                -1,
+                args.sequence_length,
+                image_pred.shape[1],
+                image_pred.shape[2],
+                image_pred.shape[3],
+            )[:, : args.sequence_length - args.atten_goal]
+            image_pred = image_pred.reshape(
+                -1,
+                image_pred.shape[2],
+                image_pred.shape[3],
+                image_pred.shape[4],
+            )
+            loss_image = 0.5 * (
+                F.mse_loss(image_pred[:, 0], label_image_primary)
+                + F.mse_loss(image_pred[:, 1], label_image_wrist)
+            )
+        else:
+            loss_image = torch.zeros((), device=device_id)
+
+        loss_total = (
+            args.loss_arm_action_ratio * loss_arm_action
+            + args.loss_gripper_action_ratio * loss_gripper_action
+            + 0.1 * loss_image
+        )
+        batch_size = images_primary.shape[0]
+        metric_sums[:4] += (
+            torch.stack(
+                [loss_total, loss_arm_action, loss_gripper_action, loss_image]
+            )
+            .double()
+            * batch_size
+        )
+        metric_sums[4] += batch_size
+        if args.rank == 0:
+            progress.set_postfix({"loss": loss_total.item()})
+
+    if dist.is_available() and dist.is_initialized():
+        dist.all_reduce(metric_sums, op=dist.ReduceOp.SUM)
+    if metric_sums[4].item() == 0:
+        raise RuntimeError("validation loader produced no samples")
+
+    averages = metric_sums[:4] / metric_sums[4]
+    metrics = {
+        "val_loss": averages[0].item(),
+        "val_loss_arm_action": averages[1].item(),
+        "val_loss_gripper_action": averages[2].item(),
+        "val_loss_image": averages[3].item(),
+        "val_samples": int(metric_sums[4].item()),
+        "epoch": epoch,
+    }
+    if args.rank == 0:
+        print(
+            "Validation epoch {epoch}: loss={loss:.6f}, arm={arm:.6f}, "
+            "gripper={gripper:.6f}, image={image:.6f}, samples={samples}".format(
+                epoch=epoch + 1,
+                loss=metrics["val_loss"],
+                arm=metrics["val_loss_arm_action"],
+                gripper=metrics["val_loss_gripper_action"],
+                image=metrics["val_loss_image"],
+                samples=metrics["val_samples"],
+            )
+        )
+        if args.report_to_wandb:
+            wandb.log(metrics)
+
+    if was_training:
+        model.train()
+    return metrics
+
 def get_checkpoint(model):
     state_dict = model.state_dict()
 
